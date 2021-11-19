@@ -20,7 +20,7 @@ limitations under the License.
 
 # lowercase
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Convert a string to lowercase.
 
@@ -159,8 +159,8 @@ beep
 
 ## See Also
 
--   [`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]: uncapitalize the first character of a string.
--   [`@stdlib/string/uppercase`][@stdlib/string/uppercase]: convert a string to uppercase.
+-   <span class="package-name">[`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]</span><span class="delimiter">: </span><span class="description">uncapitalize the first character of a string.</span>
+-   <span class="package-name">[`@stdlib/string/uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
 
 </section>
 
@@ -211,8 +211,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/string-lowercase/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/string-lowercase?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/string-lowercase.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/string-lowercase/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
