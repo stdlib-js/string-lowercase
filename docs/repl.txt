@@ -1,6 +1,6 @@
 
 {{alias}}( str )
-    Converts a `string` to lowercase.
+    Converts a string to lowercase.
 
     Parameters
     ----------
