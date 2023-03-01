@@ -30,14 +30,31 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/string-lowercase
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+-   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@esm/index.mjs';
+var lowercase = require( '@stdlib/string-lowercase' );
 ```
 
 #### lowercase( str )
@@ -59,13 +76,8 @@ var str = lowercase( 'bEEp' );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@esm/index.mjs';
+```javascript
+var lowercase = require( '@stdlib/string-lowercase' );
 
 var str = lowercase( 'Beep' );
 // returns 'beep'
@@ -81,17 +93,72 @@ str = lowercase( '$**_Beep_BoOp_**$' );
 
 str = lowercase( '' );
 // returns ''
-
-</script>
-</body>
-</html>
 ```
 
 </section>
 
 <!-- /.examples -->
 
+* * *
 
+<section class="cli">
+
+## CLI
+
+<section class="installation">
+
+## Installation
+
+To use as a general utility, install the CLI package globally
+
+```bash
+npm install -g @stdlib/string-lowercase-cli
+```
+
+</section>
+
+<!-- CLI usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```text
+Usage: lowercase [options] [<string>]
+
+Options:
+
+  -h,    --help                Print this message.
+  -V,    --version             Print the package version.
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+### Examples
+
+```bash
+$ lowercase bEEp
+beep
+```
+
+To use as a [standard stream][standard-streams],
+
+```bash
+$ echo -n 'bEEp' | lowercase
+beep
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.cli -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -101,8 +168,8 @@ str = lowercase( '' );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/string/uncapitalize`][@stdlib/string/uncapitalize]</span><span class="delimiter">: </span><span class="description">uncapitalize the first character of a string.</span>
--   <span class="package-name">[`@stdlib/string/uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
+-   <span class="package-name">[`@stdlib/string-uncapitalize`][@stdlib/string/uncapitalize]</span><span class="delimiter">: </span><span class="description">uncapitalize the first character of a string.</span>
+-   <span class="package-name">[`@stdlib/string-uppercase`][@stdlib/string/uppercase]</span><span class="delimiter">: </span><span class="description">convert a string to uppercase.</span>
 
 </section>
 
@@ -117,7 +184,7 @@ str = lowercase( '' );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -167,6 +234,10 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
+[cli-section]: https://github.com/stdlib-js/string-lowercase#cli
+[cli-url]: https://github.com/stdlib-js/string-lowercase/tree/cli
+[@stdlib/string-lowercase]: https://github.com/stdlib-js/string-lowercase/tree/main
+
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
@@ -181,9 +252,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/string/uncapitalize]: https://github.com/stdlib-js/string-uncapitalize/tree/esm
+[@stdlib/string/uncapitalize]: https://github.com/stdlib-js/string-uncapitalize
 
-[@stdlib/string/uppercase]: https://github.com/stdlib-js/string-uppercase/tree/esm
+[@stdlib/string/uppercase]: https://github.com/stdlib-js/string-uppercase
 
 <!-- </related-links> -->
 
